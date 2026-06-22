@@ -1,0 +1,61 @@
+:root {
+    --headingFont: 'Roboto Slab', serif;
+    --bodyFont: 'Courier New', Courier, monospace;
+}
+body {
+    background-color: #fffdf0;
+}
+.navbar-brand {
+    font-family: var(--headingFont);
+    font-weight: 900;
+}
+.nav-item {
+    font-family: var(--bodyFont);
+}
+.card-section-bg-set {
+    background-image: url(./assets/3.jpg);
+    background-size: cover;
+    height: 500px;
+}
+.card-sect {
+    display: flex;
+    justify-content: center;
+}
+.row {
+    margin-top: 50px;
+}
+.copyright {
+    display: flex;
+    justify-content: center;
+}
+.navbar-name {
+    margin-left: 20px;
+}
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.banner img {
+    width: 700px;
+    border-radius: 50px;
+}
+.banner svg {
+    margin-left: -10vw;
+}
+.text-banner h1 {
+    margin-top: 5vw;
+    font-family: var(--headingFont);
+    font-weight: 900;
+    text-align: center;
+}
+.text-banner {
+    display: flex;
+    justify-content: center;
+}
+.text-banner p {
+    width: 60vw;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}

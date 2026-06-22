@@ -1,0 +1,143 @@
+{
+ "name": "Drawing 1",
+ "width": 16,
+ "height": 16,
+ "hideOverflow": false,
+ "currentLayer": "2",
+ "layers": [
+  {
+   "name": "Layer 1",
+   "children": [
+    {
+     "name": "Curve",
+     "fill": {
+      "color": "rgb(28, 58, 19)",
+      "gradient": null,
+      "doc-model": "ObservableObject"
+     },
+     "stroke": {
+      "color": "transparent",
+      "width": 2,
+      "doc-model": "ObservableObject"
+     },
+     "opacity": 1,
+     "path": [
+      "P",
+      "s",
+      11.764263707448555,
+      13.012182835341196,
+      "C",
+      "s",
+      6.996469098969368,
+      14.42075947044933,
+      "C",
+      "s",
+      3.546105508750441,
+      13.487554690258651,
+      "C",
+      "s",
+      2.294021873036271,
+      11.346848812659653,
+      "C",
+      "s",
+      3.093259525728485,
+      5.229164389696467,
+      "C",
+      "s",
+      6.191165763228313,
+      3.501324232042506,
+      "C",
+      "s",
+      9.620827942469251,
+      3.725608351540431,
+      "C",
+      "c",
+      13.811536713508563,
+      2.771821866408773,
+      "C",
+      "s",
+      13.450923538926407,
+      6.188097592801024,
+      "C",
+      "s",
+      13.28997647560249,
+      8.016595010703567,
+      "C",
+      "s",
+      13.058086772777362,
+      10.246593192576846,
+      "C",
+      "s",
+      11.836976259832626,
+      12.947858768010084,
+      "C",
+      "c",
+      3.971726067322122,
+      13.312576207737465,
+      "C",
+      "s",
+      3.646799651279545,
+      13.096019629237881,
+      "C",
+      "s",
+      4.8582387795108755,
+      11.363064563989646,
+      "C",
+      "c",
+      8.211255264116328,
+      8.413704720859043,
+      "C",
+      "s",
+      10.14382608328924,
+      7.3440363528908685,
+      "C",
+      "s",
+      5.850511886160227,
+      10.450601552502922
+     ],
+     "bBoxCache": null,
+     "doc-model": "Curve",
+     "doc-model-id": "5"
+    }
+   ],
+   "isExpanded": true,
+   "locked": false,
+   "hidden": false,
+   "doc-model": "Layer",
+   "doc-model-id": "2"
+  }
+ ],
+ "selectedElements": [
+  "5"
+ ],
+ "rulers": [],
+ "colors": [
+  "rgb(28, 58, 19)",
+  "rgb(34, 68, 136)",
+  "rgb(51, 153, 204)",
+  "rgb(136, 187, 68)",
+  "rgb(255, 255, 255)",
+  "rgb(238, 170, 51)",
+  "rgb(221, 68, 34)",
+  "rgb(136, 51, 85)"
+ ],
+ "defaultFill": {
+  "color": "rgb(28, 58, 19)",
+  "doc-model": "ObservableObject"
+ },
+ "defaultStroke": {
+  "color": "transparent",
+  "width": 2,
+  "doc-model": "ObservableObject"
+ },
+ "defaultFontStyle": {
+  "family": "Open Sans",
+  "weight": 400,
+  "size": 72,
+  "isItalic": false,
+  "anchor": "start",
+  "doc-model": "ObservableObject"
+ },
+ "doc-model": "Document",
+ "doc-model-id": "838aa120-e877-4f86-8d13-d00f72f80b01"
+}
