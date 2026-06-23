@@ -48,10 +48,10 @@
                             <a class="nav-link" href="./Poetry.html">Poetry</a>
                         </li>
                         <li class="nav-item mx-5">
-                            <a class="nav-link" href="./blog.html">Bloging</a>
+                            <a class="nav-link" href="./blog.html">Blogging</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Articles</a>
+                            <a class="nav-link" href="./articles.html">Articles</a>
                         </li>
                     </ul>
                 </div>
@@ -102,38 +102,54 @@
             <div class="card-box">
                 <h3>Recent uploads</h3>
                 <h1>From The Vaults</h1>
-
-                <div class="cards my-5">
-                    <div class="card poetryCard" style="width: 18rem">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card’s content.
-                            </p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card-container container">
+                    <div class="cards my-5 row">
+                        <div class="card poetryCard col-12 col-md-4" style="width: 18rem">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up
+                                    the bulk of the card’s content.
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-body-secondary"
+                                        >Last updated 3 mins ago</small
+                                    >
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card articleCard mx-4" style="width: 18rem">
-                        <img src="..." class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card’s content.
-                            </p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div
+                            class="card articleCard mx-4 mx-md-4 col-12 col-md-4"
+                            style="width: 18rem"
+                        >
+                            <img src="..." class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up
+                                    the bulk of the card’s content.
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-body-secondary"
+                                        >Last updated 3 mins ago</small
+                                    >
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card blogCard" style="width: 18rem">
-                        <img src="..." class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card’s content.
-                            </p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="card blogCard col-12 col-md-4" style="width: 18rem">
+                            <img src="..." class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up
+                                    the bulk of the card’s content.
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-body-secondary"
+                                        >Last updated 3 mins ago</small
+                                    >
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -141,11 +157,11 @@
         </div>
         <div class="about-me-section container">
             <div class="abtsectou row">
-                <div class="abtmeimg col-12 col-md-6">
+                <div class="abtmeimg col-12 col-md-6" data-aos="fade-right">
                     <img src="./assets/aboutme.png" alt="" class="img-base" />
                 </div>
 
-                <div class="text-aboutme col-12 col-md-6">
+                <div class="text-aboutme col-12 col-md-6" data-aos="fade-left">
                     <h3>About Me</h3>
                     <h1>Abeera Fatima (melodyBee)</h1>
                     <p>
@@ -159,7 +175,42 @@
                 </div>
             </div>
         </div>
-
+        <!-- footer -->
+        <footer>
+            <div class="container py-3">
+                <div class="row">
+                    <div class="Info-abt-web col-12 col-md-4">
+                        <h1>Rustic Reads</h1>
+                        <p>A chaotic place where you find all sorts of</p>
+                    </div>
+                    <div class="socials col-6 col-md-4">
+                        <h2>Connect with me</h2>
+                        <ul>
+                            <li>
+                                <a href="">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/abeera-fatima/">LinkedIn</a>
+                            </li>
+                            <li>
+                                <a href="https://medium.com/@melodyBeee">Medium</a>
+                            </li>
+                            <li>
+                                <a href="">Gmail</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="explore col-6 col-md-4">
+                        <h2>Explore</h2>
+                        <ul>
+                            <li><a href="./Poetry.html">Poetry</a></li>
+                            <li><a href="./blog.html">Blogging</a></li>
+                            <li><a href="./articles.html">Articles</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init()
