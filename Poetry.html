@@ -1,705 +1,207 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Rustic Reads</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon" />
+    </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Poetic</title>
-<link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Roboto+Slab:wght@200&display=swap"
-    rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-</head>
-
-<body style="background-color: #DCF9E9;">
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html">Rustic Reads</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="./Poetry.html">Poetry</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./blog.html">Blogs</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  
-  <section class="container-fluid">
-    <div class="row">
-      <div class="col-12 text-center"><h2 
-        style="font-family: 'Grey Qo', cursive; font: weight 590px;font-size: 74px; color: #4A7856;">famous poems</h2></div>
-    </div>
-    <div class="row my-3 justify-content-center">
-
-      <div class="card col-10 col-lg-3">
-        <div class="card-body">
-          <details class="card-text">
-            <summary class="card-title" style="font-family: 'Roboto Slab', serif;  font-weight: 700;font-size: 20px;">
-              The Burial of the Dead</summary>
-
-
-            April is the cruellest month, breeding <br>
-            Lilacs out of the dead land, mixing<br>
-            Memory and desire, stirring<br>
-            Dull roots with spring rain.<br>
-            Winter kept us warm, covering<br>
-            Earth in forgetful snow, feeding<br>
-            A little life with dried tubers.<br>
-
-            Summer surprised us, coming over the Starnbergersee<br>
-            With a shower of rain; we stopped in the colonnade,<br>
-            And went on in sunlight, into the Hofgarten,<br>
-            And drank coffee, and talked for an hour.<br>
-
-            Bin gar keine Russin, stamm’ aus Litauen, echt deutsch.<br>
-            And when we were children, staying at the arch-duke’s,<br>
-            My cousin’s, he took me out on a sled,<br>
-            And I was frightened. He said, Marie,<br>
-            Marie, hold on tight. And down we went.<br>
-
-            In the mountains, there you feel free.<br>
-
-            I read, much of the night, and go south in the winter. <br> ~"The Waste Land" by T.S. Eliot
-          </details>
-
+    <body>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar sticky-top" data-bs-theme="light">
+            <div class="container-fluid navbar-name">
+                <a class="navbar-brand" style="font-weight: 900" href="./index.html"
+                    >Rustic Reads</a
+                >
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse justify-content-center nav-underline"
+                    id="navbarNav"
+                >
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Poetry.html">Poetry</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link" href="./blog.html">Blogging</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./articles.html">Articles</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="text-banner" data-aos="fade-up">
+            <div class="text-banner-inside">
+                <h1>Words From Soul</h1>
+                <p>
+                    Here you'll find honest book reviews, heartfelt poetry, and articles on the
+                    world's most pressing conversations, like climate. Brewed slow, written with
+                    love. Come on in.
+                </p>
+            </div>
         </div>
-      </div>
+        <!-- cards -->
+        <div class="card-container container">
+            <div class="cards my-5 row">
+                <div class="card poetryCard col-12 col-md-4" style="width: 18rem">
+                    <a href=""
+                        ><div class="card-body">
+                            <h5 class="card-title">Haunted Memories</h5>
+                            <p class="card-text">
+                                changed my style,<br />
+                                changed my body,<br />
+                                changed my smile,<br />
+                                Always in a disguise,<br />
+                                trying to tell you somehow,<br />
+                                your daughter isn't who she says,<br />
+                                you should help her out.<br />
 
-      <div class="card col-10 col-lg-3">
-        <div class="card-body">
-          <details class="card-text">
-            <summary class="card-title" style="font-family: 'Roboto Slab', serif; font-weight: 700;font-size: 20px;">She
-              Walks in Beauty </summary>
-            She walks in beauty, like the night<br>
-            Of cloudless climes and starry skies;<br>
-            And all that's best of dark and bright<br>
-            Meet in her aspect and her eyes;<br>
-            Thus mellowed to that tender light<br>
-            Which heaven to gaudy day denies.<br>
+                                She keeps thinking of the memories,<br />
+                                thinking of what you said,<br />
+                                the things you might've forgotten ,<br />
+                                But she never forgave.<br />
 
-            One shade the more, one ray the less,<br>
-            Had half impaired the nameless grace<br>
-            Which waves in every raven tress,<br>
-            Or softly lightens o'er her face;<br>
-            Where thoughts serenely sweet express,<br>
-            How pure, how dear their dwelling-place.<br>
+                                I kept it to myself,<br />
+                                Just the way you said,<br />
+                                so they will never get to ask,<br />
+                                Do you think her mother's the same way?<br />
 
-            And on that cheek, and o'er that brow,<br>
-            So soft, so calm, yet eloquent,<br>
-            The smiles that win, the tints that glow,<br>
-            But tell of days in goodness spent,<br>
-            A mind at peace with all below,<br>
-            A heart whose love is innocent! <br>~by Lord Byron
-          </details>
+                                So I bury it down,<br />
+                                and deny it to myself,<br />
+                                for someday I'll wake up,<br />
+                                and find out this was all just fake,<br />
+
+                                But this is so real,<br />
+                                I am not paralysed anymore,<br />
+                                I see it clear as daylight,<br />
+                                They all are coming back to me,<br />
+
+                                The scream and sounds,<br />
+                                for the person in my room,<br />
+                                sitting in the corner,<br />
+                                hand at her chest,<br />
+                                She just tried to breath.<br />
+
+                                I was just 13,<br />
+                                I never took a breath for myself since,<br />
+                                I was just a kid,<br />
+                                why didn't you ask me yourself?<br />
+
+                                For all the why's and how's<br />
+                                you should've asked me somehow,<br />
+                                I wish to have those eid,<br />
+                                those birthday's like before,<br />
+                                when i felt complete,<br />
+                                with the people i loved the most.<br />
+                            </p>
+                            <p class="card-text">
+                                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                            </p>
+                        </div></a
+                    >
+                </div>
+                <div class="card articleCard mx-4 mx-md-4 col-12 col-md-4" style="width: 18rem">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk
+                            of the card’s content.
+                        </p>
+                        <p class="card-text">
+                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </p>
+                    </div>
+                </div>
+                <div class="card blogCard col-12 col-md-4" style="width: 18rem">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk
+                            of the card’s content.
+                        </p>
+                        <p class="card-text">
+                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="card col-10 col-lg-3">
-        <div class="card-body">
-          <details class="card-text">
-            <summary class="card-title" style="font-family: 'Roboto Slab', serif; font-weight: 700;font-size: 20px;">The
-              Road Not Taken</summary>
-            Two roads diverged in a yellow wood,<br>
-            And sorry I could not travel both<br>
-            And be one traveler, long I stood<br>
-            And looked down one as far as I could<br>
-            To where it bent in the undergrowth;<br>
-
-            Then took the other, as just as fair,<br>
-            And having perhaps the better claim,<br>
-            Because it was grassy and wanted wear;<br>
-            Though as for that the passing there<br>
-            Had worn them really about the same,<br>
-
-            And both that morning equally lay<br>
-            In leaves no step had trodden black.<br>
-            Oh, I kept the first for another day!<br>
-            Yet knowing how way leads on to way,<br>
-            I doubted if I should ever come back.<br>
-
-            I shall be telling this with a sigh<br>
-            Somewhere ages and ages hence:<br>
-            Two roads diverged in a wood, and I—<br>
-            I took the one less traveled by,<br>
-            And that has made all the difference. <br>~Robert Frost</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="container-fluid">
-    <div class="row">
-    <div class="row my-3 justify-content-center">
-
-      <div class="card col-10 col-lg-3">
-        <div class="card-body">
-          <details class="card-text">
-            <summary class="card-title" style="font-family: 'Roboto Slab', serif;  font-weight: 700;font-size: 20px;">
-              I Wandered Lonely as a Cloud</summary>
-            I wandered lonely as a cloud <br>
-            That floats on high o'er vales and hills,<br>
-            When all at once I saw a crowd,<br>
-            A host, of golden daffodils;<br>
-            Beside the lake, beneath the trees,<br>
-            Fluttering and dancing in the breeze.<br>
-            
-            Continuous as the stars that shine<br>
-            And twinkle on the Milky Way,<br>
-            They stretched in never-ending line<br>
-            Along the margin of a bay:<br>
-            Ten thousand saw I at a glance,<br>
-            Tossing their heads in sprightly dance.<br>
-            
-            The waves beside them danced; but they<br>
-            Out-did the sparkling waves in glee:<br>
-            A poet could not but be gay,<br>
-            In such a jocund company:<br>
-            I gazed—and gazed—but little thought<br>
-            What wealth the show to me had brought:<br>
-            
-            For oft, when on my couch I lie<br>
-            In vacant or in pensive mood,<br>
-            They flash upon that inward eye<br>
-            Which is the bliss of solitude;<br>
-            And then my heart with pleasure fills,<br>
-            And dances with the daffodils.<br>
-            ~by William Wordsworth
-          </details>
-
-        </div>
-      </div>
-
-      <div class="card col-10 col-lg-3">
-        <div class="card-body">
-          <details class="card-text">
-            <summary class="card-title" style="font-family: 'Roboto Slab', serif; font-weight: 700;font-size: 20px;">
-              The Love Song</summary>
-            Let us go then, you and I,<br>
-When the evening is spread out against the sky<br>
-Like a patient etherized upon a table;<br>
-Let us go, through certain half-deserted streets,<br>
-The muttering retreats<br>
-Of restless nights in one-night cheap hotels<br>
-And sawdust restaurants with oyster-shells:<br>
-Streets that follow like a tedious argument<br>
-Of insidious intent<br>
-To lead you to an overwhelming question…<br>
-Oh, do not ask, “What is it?”<br>
-Let us go and make our visit.<br>
-~by T.S. Eliot
-          </details>
-        </div>
-      </div>
-
-      <div class="card col-10 col-lg-3">
-        <div class="card-body">
-          <details class="card-text">
-            <summary class="card-title" style="font-family: 'Roboto Slab', serif; font-weight: 700;font-size: 20px;">
-            If</summary>
-            If you can keep your head when all about you
-Are losing theirs and blaming it on you,
-If you can trust yourself when all men doubt you,
-But make allowance for their doubting too;
-
-If you can wait and not be tired by waiting,
-Or being lied about, don’t deal in lies,
-Or being hated, don’t give way to hating,
-And yet don’t look too good, nor talk too wise:
-
-If you can dream—and not make dreams your master;
-If you can think—and not make thoughts your aim;
-If you can meet with Triumph and Disaster
-And treat those two impostors just the same;
-
-If you can bear to hear the truth you’ve spoken
-Twisted by knaves to make a trap for fools,
-Or watch the things you gave your life to, broken,
-And stoop and build ’em up with worn-out tools:
-
-If you can make one heap of all your winnings
-And risk it on one turn of pitch-and-toss,
-And lose, and start again at your beginnings
-And never breathe a word about your loss;
-
-If you can force your heart and nerve and sinew
-To serve your turn long after they are gone,
-And so hold on when there is nothing in you
-Except the Will which says to them: ‘Hold on!’
-
-If you can talk with crowds and keep your virtue,
-Or walk with Kings—nor lose the common touch,
-If neither foes nor loving friends can hurt you,
-If all men count with you, but none too much;
-
-If you can fill the unforgiving minute
-With sixty seconds’ worth of distance run,
-Yours is the Earth and everything that’s in it,
-And—which is more—you’ll be a Man, my son! <br>
-~by Rudyard Kipling
-          </details>
-        </div>
-      </div>
-    </div>
-    </section>
-  <section class="container-fluid">
-    <div class="row">
-    <div class="row my-3 justify-content-center">
-
-      <div class="card col-10 col-lg-3">
-        <div class="card-body">
-          <details class="card-text">
-            <summary class="card-title" style="font-family: 'Roboto Slab', serif;  font-weight: 700;font-size: 20px;">
-            The  Armadillo.</summary>
-            Last night another big one fell.
-It splattered like an egg of fire
-against the cliff behind the house.
-The flame ran down. We saw the pair
-of owls who nest there flying up
-and up, their whirling black-and-white
-stained bright pink underneath, until
-they shrieked up out of sight.
-The ancient owls’ nest must have burned.
-Hastily, all alone,
-a glistening armadillo left the scene,
-rose-flecked, head down, tail down,
-and then a baby rabbit jumped out,
-short-eared, to our surprise.
-So soft!—a handful of intangible ash
-with fixed, ignited eyes.
-Too pretty, dreamlike mimicry!
-O falling fire and piercing cry
-and panic, and a weak mailed fist
-clenched ignorant against the sky!
-          </details>
-        </div>
-      </div>
-
-      <div class="card col-10 col-lg-3">
-        <div class="card-body">
-          <details class="card-text">
-            <summary class="card-title" style="font-family: 'Roboto Slab', serif; font-weight: 700;font-size: 20px;">
-              A Love Letter for My Sister
-            </summary>
-            A ghost cannot open an envelope. Still I address this to you—I am saving
-this world for you, see.
-River water runs. Fields fill with golden.
-Apples bitten. A ghost cannot open
-an envelope. A ghost cannot run.
-The road travels its forever distance.
-Two girls pause by a bridge, to notice.
-The fall leaves don’t fall hard.
-The spring lasts forever, after a storm.
-I am opening this envelope for you, see.
-An open blue flower. A paper bag holds a candle.
-I am letting the world open me.
-A leaf falls. A lead smudge
-leads to a girl in a red dress.
-I am reading the letters you meant for me to see.
-I hope that you will open the envelopes,
-so I am opening the world inside of me.
-I am sending my letters to you.
-The river goes to the ocean.
-The ocean sounds infinite.
-We are big enough to hear it.
-Both of us.
-Love always,
-Your sister, Laurel <br>
-~from Love letters to the dead-novel
-
-          </details>
-        </div>
-      </div>
-
-      <div class="card col-10 col-lg-3">
-        <div class="card-body">
-          <details class="card-text">
-            <summary class="card-title" style="font-family: 'Roboto Slab', serif; font-weight: 700;font-size: 20px;">
-              The Red Wheelbarrow</summary>
-            
-            so much depends upon <br>
-            a red wheel barrow <br>
-            glazed with rain water <br>
-            beside the white <br>
-            chickens <br>
-            ~by William Carlos
-
-          </details>
-        </div>
-      </div>
-    </div>
-    </section>
-
- 
-  <section class="container-fluid">
-    <div class="row">
-      <div class="col-12 text-center"><h2 
-        style="font-family: 'Grey Qo', cursive; font: weight 590px;font-size: 74px; color: #4A7856;">Mine</h2></div>
-    </div>
-    <div class="row my-3 justify-content-center">
-
-      <div class="card col-10 col-lg-3">
-        <div class="card-body">
-          <details class="card-text">
-            <summary class="card-title" style="font-family: 'Roboto Slab', serif;  font-weight: 700;font-size: 20px;">
-              When the Darkness and Light Meet</summary>
-            When the darkness and light meet,<br>
-            The world is a canvas, blank and neat.<br>
-            The shadows and highlights dance and play,<br>
-            And the colors of life come out to sway.<br>
-
-            The darkness brings a cloak of mystery,<br>
-            A shroud of secrets and history.<br>
-            It wraps the world in its embrace,<br>
-            And whispers secrets in every place.<br>
-
-            The light brings a warm and gentle glow,<br>
-            A radiance that makes the world glow.<br>
-            It shines on everything in sight,<br>
-            And turns the darkness into bright.<br>
-
-            Together, they create a tapestry,<br>
-            A weave of beauty and harmony.<br>
-            The darkness and light, hand in hand,<br>
-            Bring balance to this wondrous land.<br>
-
-            So embrace the darkness and light,<br>
-            And let them paint your life so bright.<br>
-            For when they meet, a masterpiece is born,<br>
-            A painting of life, never to be torn.
-          </details>
-
-        </div>
-      </div>
-
-      <div class="card col-10 col-lg-3">
-        <div class="card-body">
-          <details class="card-text">
-            <summary class="card-title" style="font-family: 'Roboto Slab', serif; font-weight: 700;font-size: 20px;">
-              When life takes me down</summary>
-            When life takes me down,<br>
-            And the darkness comes around,<br>
-            I'm drowning in a sea of sorrow,<br>
-            Hoping for a better tomorrow.<br>
-
-            I wish I had someone to hold,<br>
-            Someone to share my pain so cold,<br>
-            But the emptiness consumes me whole,<br>
-            I'm left alone, with nothing to console.<br>
-
-            I long for a family, a place to belong,<br>
-            Where I'm not just a face in the crowd,<br>
-            But my heart is heavy, my soul adrift,<br>
-            As I struggle to stay afloat and exist.<br>
-
-            The weight of the world drags me down,<br>
-            As I gasp for breath, I feel like I'll drown,<br>
-            But somewhere deep inside, a spark still glows,<br>
-            A flicker of hope that refuses to go.<br>
-
-            So I'll keep fighting, with all my might,<br>
-            And I'll keep searching, for a ray of light,<br>
-            For I know that one day, I'll break free,<br>
-            From the depths of despair, and be me.<br>
-
-            Though life may take me down,<br>
-            And the darkness comes around,<br>
-            I'll keep swimming towards the shore,<br>
-            Hoping for a better tomorrow, evermore.
-
-          </details>
-        </div>
-      </div>
-
-      <div class="card col-10 col-lg-3">
-        <div class="card-body">
-          <details class="card-text">
-            <summary class="card-title" style="font-family: 'Roboto Slab', serif; font-weight: 700;font-size: 20px;">
-              Haunted Memories</summary>
-            changed my style,<br>
-            changed my body,<br>
-            changed my smile,<br>
-            Always in a disguise,<br>
-            trying to tell you somehow,<br>
-            your daughter isn't who she says,<br>
-            you should help her out.<br>
-
-            She keeps thinking of the memories,<br>
-            thinking of what you said,<br>
-            the things you might've forgotten ,<br>
-            But she never forgave.<br>
-
-            I kept it to myself,<br>
-            Just the way you said,<br>
-            so they will never get to ask,<br>
-            Do you think her mother's the same way?<br>
-
-            So I bury it down,<br>
-            and deny it to myself,<br>
-            for someday I'll wake up,<br>
-            and find out this was all just fake,<br>
-
-            But this is so real,<br>
-            I am not paralysed anymore,<br>
-            I see it clear as daylight,<br>
-            They all are coming back to me,<br>
-
-            The scream and sounds,<br>
-            for the person in my room,<br>
-            sitting in the corner,<br>
-            hand at her chest,<br>
-            She just tried to breath.<br>
-
-            I was just 13,<br>
-            I never took a breath for myself since,<br>
-            I was just a kid,<br>
-            why didn't you ask me yourself?<br>
-
-            For all the why's and how's<br>
-            you should've asked me somehow,<br>
-            I wish to have those eid,<br>
-            those birthday's like before,<br>
-            when i felt complete,<br>
-            with the people i loved the most.<br>
-          </details>
-        </div>
-      </div>
-    </div>
-    </section>
- 
-
-  <section class="container-fluid">
-      <div class="col-12 text-center"><h2
-        style="font-family: 'Grey Qo', cursive; font: weight 590px;font-size: 74px; color: #4A7856;">my favourites</h2></div>
-    </div>
-    <div class="row my-3 justify-content-center">
-
-      <div class="card col-10 col-lg-3">
-        <div class="card-body">
-          <details class="card-text">
-            <summary class="card-title" style="font-family: 'Roboto Slab', serif; font-weight: 700;font-size: 20px;">
-              Songs of sapphique
-            </summary>
-            Walls have ears.<br>
-            Door have eyes.<br>
-            Trees have voices.<br>
-            Beast tells lies.<br>
-            Beware the rain.<br>
-            Beware the snow.<br>
-            Beware the man.<br>
-            You think you know.<br>
-          </details>
-        </div>
-      </div>
-      <div class="card col-10 col-lg-3">
-        <div class="card-body">
-          <details class="card-text">
-            <summary class="card-title" style="font-family: 'Roboto Slab', serif; font-weight: 700;font-size: 20px;">I Wandered Lonely as a Cloud
-            </summary>
-
-          </details>
-        </div>
-      </div>
-      <div class="card col-10 col-lg-3">
-        <div class="card-body">
-          <details class="card-text">
-            <summary class="card-title" style="font-family: 'Roboto Slab', serif; font-weight: 700;font-size: 20px;">
-              The Armadillo.</summary>
-              Last night another big one fell.
-It splattered like an egg of fire
-against the cliff behind the house.
-The flame ran down. We saw the pair
-of owls who nest there flying up
-and up, their whirling black-and-white
-stained bright pink underneath, until
-they shrieked up out of sight.
-The ancient owls’ nest must have burned.
-Hastily, all alone,
-a glistening armadillo left the scene,
-rose-flecked, head down, tail down,
-and then a baby rabbit jumped out,
-short-eared, to our surprise.
-So soft!—a handful of intangible ash
-with fixed, ignited eyes.
-Too pretty, dreamlike mimicry!
-O falling fire and piercing cry
-and panic, and a weak mailed fist
-clenched ignorant against the sky!
-          </details>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="container-fluid">
-    <div class="row">
-    <div class="row my-3 justify-content-center">
-
-      <div class="card col-10 col-lg-3">
-        <div class="card-body">
-          <details class="card-text">
-            <summary class="card-title" style="font-family: 'Roboto Slab', serif;  font-weight: 700;font-size: 20px;">
-              A Love Letter for My Sister
-            </summary>
-            A ghost cannot open an envelope. Still I address this to you—I am saving
-this world for you, see.
-River water runs. Fields fill with golden.
-Apples bitten. A ghost cannot open
-an envelope. A ghost cannot run.
-The road travels its forever distance.
-Two girls pause by a bridge, to notice.
-The fall leaves don’t fall hard.
-The spring lasts forever, after a storm.
-I am opening this envelope for you, see.
-An open blue flower. A paper bag holds a candle.
-I am letting the world open me.
-A leaf falls. A lead smudge
-leads to a girl in a red dress.
-I am reading the letters you meant for me to see.
-I hope that you will open the envelopes,
-so I am opening the world inside of me.
-I am sending my letters to you.
-The river goes to the ocean.
-The ocean sounds infinite.
-We are big enough to hear it.
-Both of us.
-Love always,
-Your sister, Laurel
-~from Love letters to the dead-a novel
-          </details>
-
-        </div>
-      </div>
-
-      <div class="card col-10 col-lg-3">
-        <div class="card-body">
-          <details class="card-text">
-            <summary class="card-title" style="font-family: 'Roboto Slab', serif; font-weight: 700;font-size: 20px;">
-            A poem for Augustus</summary>
-            so much depends upon <br>
-            a red wheel barrow <br>
-            glazed with rain water <br>
-            beside the white <br>
-            chickens <br>
-            ~by William Carlos <br>
-            And so much depends,<br>
-            I told Augustus,<br>
-            upon a blue sky cut open by <br>
-            the branches of the trees above. <br>
-            So much depends upon the transparent G-tube <br>
-            erupting from the gut of the blue-lipped boy. <br>
-            So much depends upon this <br>
-            observer of the universe. <br>
-            ~from 
-
-          </details>
-        </div>
-      </div>
-
-      <div class="card col-10 col-lg-3">
-        <div class="card-body">
-          <details class="card-text">
-            <summary class="card-title" style="font-family: 'Roboto Slab', serif; font-weight: 700;font-size: 20px;">
-            In the depth of it all</summary>
-            In the depths of loss and grief,
-When the heart is torn and the soul is brief,
-It's hard to find the strength to rise,
-To see the world with hopeful eyes.
-
-But in the midst of darkest night,
-There can be a glimmer of light,
-A spark of hope that lights the way,
-And shows us there's a brighter day.
-
-For though we may have lost our love,
-Our life goes on, and we rise above.
-We find new strength in every breath,
-And hold on to the memories that we have left.
-
-We learn to live with broken hearts,
-And find new paths to make new starts.
-We find new love to fill the void,
-And find new joy in every moment enjoyed.
-
-For life is full of ups and downs,
-Of happiness and sadness that surround.
-And though we may stumble and fall,
-We rise again, strong and tall.
-
-For strength is not just in the muscle,
-But in the heart that never crumbles.
-And in the face of loss and strife,
-We find new happiness in life. <br>
-~from chatGPT
-          </details>
-        </div>
-      </div>
-    </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <footer style="background-color: #161719; color: #DCF9E9;" id="footer" class="container-fluid ">
-    <div class="row">
-      <div class="col-6 footer-links">
-        <h4>Useful Links</h4>
-        <ul class="list-unstyled">
-          <li><i class="bx bx-chevron-right"></i> <a style="text-decoration: none; color: #DCF9E9;" class="link-dark"
-              href="./index.html">Home</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a style="text-decoration: none; color: #DCF9E9;" class="link-dark"
-              href="./Poetry.html">Poetry</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a style="text-decoration: none; color: #DCF9E9;" class="link-dark"
-              href="./Book-review.html">Book reviews</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a style="text-decoration: none; color: #DCF9E9;" class="link-dark"
-              href="./blog.html">blogs</a></li>
-        </ul>
-      </div>
-      <div class="col-6 footer-links">
-        <h4>Our Social Networks</h4>
-        <div class="social-links mt-3">
-          <a style=" text-decoration: none; color: #DCF9E9; height: 50px;" class="link-dark " href="#"
-            class="facebook"><i style="font-size: xx-large;  padding-right : 4px; margin: 4px;"
-              class="bx bxl-facebook"></i></a>
-          <a style="text-decoration: none; color: #DCF9E9;" class="link-dark " href="#" class="instagram"><i
-              style="font-size: xx-large; padding : 4px; margin: 4px;" class="bx bxl-instagram"></i></a>
-          <a style="text-decoration: none; color: #DCF9E9;" class="link-dark " href="#" class="linkedin"><i
-              style="font-size: xx-large;padding-left : 4px; margin: 4px;" class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>
-    </div>
-    <div class="container footer-bottom clearfix">
-      <div class="row justify-content-between ">
-        <div class="copyright">
-          &copy; Copyright 2023-Rustic Reads. All Rights Reserved
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-    crossorigin="anonymous"></script>
-</body>
-
+        <!-- footer -->
+        <footer>
+            <div class="container py-3">
+                <div class="row">
+                    <div class="Info-abt-web col-12 col-md-4">
+                        <h1>Rustic Reads</h1>
+                        <p>A chaotic place where you find all sorts of</p>
+                    </div>
+                    <div class="socials col-6 col-md-4">
+                        <h2>Connect with me</h2>
+                        <ul>
+                            <li>
+                                <a href="">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/abeera-fatima/">LinkedIn</a>
+                            </li>
+                            <li>
+                                <a href="https://medium.com/@melodyBeee">Medium</a>
+                            </li>
+                            <li>
+                                <a href="">Gmail</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="explore col-6 col-md-4">
+                        <h2>Explore</h2>
+                        <ul>
+                            <li><a href="./Poetry.html">Poetry</a></li>
+                            <li><a href="./blog.html">Blogging</a></li>
+                            <li><a href="./articles.html">Articles</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="divider mx-5"></div>
+            <div class="copywrite pt-2">
+                <p class="pb-4">&copy; Copyright 2023-Rustic Reads. All Rights Reserved</p>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init()
+        </script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>

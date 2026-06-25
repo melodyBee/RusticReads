@@ -1,5 +1,6 @@
 :root {
     --headingFont: 'Roboto Slab', serif;
+
     --bodyFont: 'Courier New', Courier, monospace;
     --rose: #de7c9b;
     --lightpink: #f7c1bb;
@@ -14,6 +15,7 @@ body {
     margin: 0%;
     padding: 0%;
 }
+
 nav {
     background-color: var(--bgc);
 }
@@ -67,6 +69,7 @@ nav {
     display: flex;
     justify-content: center;
 }
+
 .text-banner p {
     width: 60vw;
     text-align: center;
@@ -95,6 +98,9 @@ nav {
     display: flex;
     justify-content: center;
 }
+.card-title {
+    font-family: var(--headingFont);
+}
 .poetryCard {
     background-color: var(--lightpink);
 }
@@ -104,7 +110,13 @@ nav {
 .blogCard {
     background-color: var(--lightgreen);
 }
-
+.poetryCard,
+.articleCard,
+.blogCard {
+    width: 100%; /* let the col control width */
+    max-width: 320px; /* your desired max size */
+    min-height: 280px; /* your desired height */
+}
 .about-me-section {
     display: flex;
     justify-content: center;
@@ -128,11 +140,10 @@ nav {
 }
 .text-aboutme {
     margin-top: 5vw;
-    margin-left: 7vw;
 }
 .text-aboutme h3 {
     color: var(--rose);
-    font-size: large;
+    font-size: x-large;
     font-weight: 800;
 }
 .text-aboutme p {
@@ -180,10 +191,36 @@ footer a:hover {
 .Info-abt-web p {
     font-size: small;
 }
+.divider {
+    background-color: var(--darkgreen);
+    height: 1px;
+}
 @media screen and (min-width: 481px) {
     .text-aboutme h3 {
         color: var(--rose);
-        font-size: small;
+        font-size: large;
         font-weight: 900;
     }
+    .text-aboutme h1 {
+        font-size: x-large;
+        font-weight: 900;
+    }
+}
+.copywrite {
+    display: flex;
+    justify-content: center;
+}
+.copywrite p {
+    align-items: center;
+}
+.card-text {
+    color: var(--darkgreen);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* Change this number to your desired line limit */
+    overflow: hidden;
+}
+.card a {
+    text-decoration: none;
+    color: black;
 }
