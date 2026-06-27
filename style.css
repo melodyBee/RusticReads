@@ -224,3 +224,66 @@ footer a:hover {
     text-decoration: none;
     color: black;
 }
+/* poetry css */
+.modal-title {
+    font-family: var(--headingFont);
+}
+.modal-header {
+    background-color: var(--lightpink);
+}
+.modal-body {
+    background-color: var(--bgc);
+    font-size: small;
+}
+.cardContainer {
+    display: flex;
+    justify-content: center;
+}
+.cardContainer .card {
+    max-width: 760px;
+}
+.cardContainer img {
+    margin-top: -2vw;
+}
+
+.card-body-content {
+    margin-top: -4vw;
+    margin-left: 1vw;
+}
+.modal-sizing {
+    max-width: 860px;
+}
+.cute {
+    color: var(--rose);
+    font-size: x-large;
+}
+.cute-wrapper {
+    position: relative;
+    /* keeps dots away from cards by limiting their zone */
+    padding: 0 80px; /* push cards inward, dots live in the padding space */
+}
+
+.cute-dot {
+    position: absolute;
+    font-size: 1.2rem;
+    color: var(--rose);
+    font-size: x-large; /* match your rustic palette */
+    pointer-events: none; /* so they don't interfere with clicks */
+    user-select: none;
+}
+
+/* on small screens, hide or shrink them so they don't crowd */
+@media (max-width: 768px) {
+    .cute-dot {
+        font-size: 0.8rem;
+    }
+    .cute-wrapper {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cute-dot {
+        display: none;
+    }
+}
