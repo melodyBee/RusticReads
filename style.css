@@ -220,6 +220,13 @@ footer a:hover {
     -webkit-line-clamp: 4; /* Change this number to your desired line limit */
     overflow: hidden;
 }
+.card-text-bigone {
+    color: var(--darkgreen);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Change this number to your desired line limit */
+    overflow: hidden;
+}
 .card a {
     text-decoration: none;
     color: black;
@@ -251,7 +258,7 @@ footer a:hover {
     margin-left: 1vw;
 }
 .modal-sizing {
-    max-width: 860px;
+    max-width: 1260px;
 }
 .cute {
     color: var(--rose);
@@ -271,6 +278,10 @@ footer a:hover {
     pointer-events: none; /* so they don't interfere with clicks */
     user-select: none;
 }
+.modal-body img {
+    max-width: 960px;
+    border-radius: 15px;
+}
 
 /* on small screens, hide or shrink them so they don't crowd */
 @media (max-width: 768px) {
@@ -280,10 +291,25 @@ footer a:hover {
     .cute-wrapper {
         padding: 0 40px;
     }
+    .modal-body img {
+        max-width: 500px;
+        border-radius: 15px;
+    }
+    .card-img-bigone {
+        max-width: 445px;
+    }
+    .card-img-bigone img {
+    }
 }
 
 @media (max-width: 480px) {
     .cute-dot {
         display: none;
+    }
+    .modal-sizing {
+        max-width: 1060px;
+    }
+    .card-img-bigone {
+        max-width: 300px;
     }
 }
