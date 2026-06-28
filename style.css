@@ -300,8 +300,27 @@ footer a:hover {
     }
     .card-img-bigone img {
     }
-}
+    .text-aboutme p {
+        width: 90vw;
+    }
 
+    .abtmeimg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 544px) {
+    .cute-dot {
+        display: none;
+    }
+    .modal-sizing {
+        max-width: 1060px;
+    }
+    .card-img-bigone {
+        max-width: 430px;
+    }
+}
 @media (max-width: 480px) {
     .cute-dot {
         display: none;
