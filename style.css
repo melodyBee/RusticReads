@@ -235,8 +235,14 @@ footer a:hover {
 .modal-title {
     font-family: var(--headingFont);
 }
-.modal-header {
+.modal-header1 {
     background-color: var(--lightpink);
+}
+.modal-header2 {
+    background-color: var(--grey);
+}
+.modal-header3 {
+    background-color: var(--lightgreen);
 }
 .modal-body {
     background-color: var(--bgc);
